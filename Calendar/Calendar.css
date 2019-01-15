@@ -1,0 +1,162 @@
+:root {
+  --total-width: 400px;
+  --font-color: #EADEDB;
+  --hover-color: #667292;
+  --focus-cell: dodgerblue;
+  --hover-cell: rgb(95, 175, 255);
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url('background/blackboard.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#vidget {
+  font-size: 30px;
+  color: var(--font-color);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0px 50px 50px 50px rgba(0, 0, 0, 0.5) inset;
+  width: var(--total-width);
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15%;
+}
+#vidget:hover {
+  cursor: default;
+}
+
+.clock {
+  font-size: 2.6em;
+}
+.clock,.todaysDate {
+  margin-left: 20px;
+}
+.todaysDate:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+.datePicker {
+  width: var(--total-width);
+  height: 80px;
+}
+.pickerField {
+  display: none;
+}
+.pickerField__year {
+  width: 20%;
+}
+.pickerField__month {
+  width: 45%;
+}
+.pickerField__day {
+  width: 15%;
+}
+.pickerField__ok {
+  width: 10%;
+  cursor: pointer;
+}
+.pickerField__ok:hover {
+  background: var(--hover-color);
+  color: var(--font-color);
+}
+.pickerField * {
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 5px;
+  font-size: 20px;
+  height: 35px;
+}
+.pickerField_open {
+  display: block;
+}
+.fa-calendar-alt {
+  font-size: 1.3em;
+  color: var(--font-color);
+  margin-left: 20px;
+  cursor: pointer;
+}
+.fa-calendar-alt:hover {
+  color: var(--hover-color);
+}
+
+.navigator {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--total-width);
+  height:50px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.navigator *:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+.navigator__left, .navigator__right {
+  font-size: 1.6em;
+  padding: 0 15px;
+}
+.navigator__current-date {
+  padding: 0 10px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: var(--total-width);
+  height: 240px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 15px 15px ;
+}
+
+.container table, .container th, .container td {
+  text-align: center;
+  border-collapse: collapse;
+}
+.container table {
+  width: var(--total-width);
+  transition: all 0.3s;
+}
+.container td, .container th {
+  width: calc(100% / 7);
+  font-size: 0.9em;
+}
+.container td:hover {
+  background: var(--hover-cell);
+}
+
+.dateTable tr:first-child {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.monthTable td, .yearTable td {
+  height: 70px;
+}
+
+ .notThisMonth, .notThisDecade {
+  color: gray;
+}
+
+.presentDay, .presentMonth, .presentYear {
+  background:  dodgerblue;
+  color: black;
+  box-shadow: 0px 0px 10px 2px #666;
+  transition: all .2s;
+}
+.focusedDate {
+  background: var(--focus-cell);
+}
+
+.clock, .todaysDate, .navigator__current-date, .container, .datePicker { 
+  /* предотвращение выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
