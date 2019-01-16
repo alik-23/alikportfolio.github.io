@@ -6,23 +6,27 @@ body, html {
     margin: 0;
     width: 100%;
     height: 50px;
-    background: #ccc;
-}
-.navbar ul {
-    margin: 0;
-}
-.navbar__link {
-    display: inline-block;
+    background: rgb(63, 57, 57);
 }
 
-/* .background {
+.home {
+    position: relative;
     background-image: url("background/background-1.jpeg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;;
-} */
+}
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+}
 
 .projects {
     height: 600px;
@@ -30,4 +34,22 @@ body, html {
     text-align: center;
     margin: 0 auto;
     background: #ddd;
+}
+.projects h1 {
+    margin: 0;
+    padding: 10px 0; 
+}
+
+.contact {
+    position: relative;
+    height: 100px;
+    background: #333;
+}
+.contact__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column nowrap;
 }
