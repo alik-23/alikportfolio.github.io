@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+}
+
+.navbar {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+}
+.navbar ul {
+    margin: 0;
+}
+.navbar__link {
+    display: inline-block;
+}
+
+/* .background {
+    background-image: url("background/background-1.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+} */
+
+.projects {
+    height: 600px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    background: #ddd;
+}
