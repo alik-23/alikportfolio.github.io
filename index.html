@@ -22,25 +22,30 @@
 
     <div class="home" id="home">
         <div class="profile">
-            <h1 class="profile__name">Hi, my name is Alikhan</h1>
-            <p class="profile__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero voluptatum quas natus nulla minima corrupti similique esse, et porro aliquam.</p>
+            <h1 class="profile__name">Привет, я Алихан!</h1>
+            <div class="profile__descritpion">
+                <p>Я занимаюсь frontend-разработкой. Мне интересно осваивать новые технологии.</p>
+                <p><strong>Знания и навыки:</strong> JavaScript, HTML, CSS, git, npm.</p>
+                <p>В данный момент изучаю React, Webpack.</p>
+            </div>
         </div>
     </div>
 
     <div class="projects" id="projects">
+        <h1>Мои проекты</h1>
         <div class="projects-content">
             <a class="project-item" href="Calendar/Calendar.html" target="_blank">
                 <img class="project-item__screenshot" src="images/calendar.jpg" alt="calendar image">
                 <div class="project-item__description">
                     <h3>Calendar</h3>
-                    <p>Calendar-Widget with clock. Also you can enter a date manually (since 01.01.01).</p>
+                    <p>Календарь-виджет с часами и функцией ввода даты в ручную (начиная с 1 года Н.Э.)</p>
                 </div>
             </a>
             <a class="project-item" href="Autocomplete/index.html" target="_blank">
                 <img class="project-item__screenshot" src="images/autocomplete.jpg" alt="autocomplete image">
                 <div class="project-item__description">
                     <h3>Autocomplete</h3>
-                    <p>Start typing and the function will show options.</p>
+                    <p>Начните печатать и вы увидете список совпадений.</p>
                 </div>
             </a>
         </div>
@@ -48,8 +53,21 @@
 
     <div class="contact" id="contact">
         <div class="contact__info">
-            <span class="contact__phone">Phone: 123456879</span>
-            <span class="contact__mail">E-mail: lorem@mail.com</span>
+            <h1>Контакты</h1>
+            <div class="table">
+                <div class="contact__phone row"> 
+                    <div class="cell">Телефон:</div>
+                    <div class="cell">+7 (778) 700 47 23</div>
+                </div>
+                <div class="contact__mail row">
+                    <div class="cell">E-mail:</div>
+                    <div class="cell">lorem@mail.com</div>
+                </div>
+                <div class="contact__mail row">
+                    <div class="cell"></div>
+                    <div class="cell">lorem@mail.com</div>
+                </div>
+            </div>
         </div>
     </div>
     
