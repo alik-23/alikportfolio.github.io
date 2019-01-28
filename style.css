@@ -50,13 +50,13 @@ body {
     .navbar__link {
         display: block;
         background: #323a3d;
-        text-align: right;
+        text-align: center;
     }
     .navbar__icon {
         display: block;
-        position: absolute;
+        position: absolute; 
         top: 0;
-        right: 0;
+        right: 10px;
         font-size: 40px;
         color: var(--font-color);
         width: var(--navbar-height);
@@ -75,19 +75,18 @@ body {
 }
 
 .home {
-    position: relative;
+    /* position: relative; */
     background-image: url("images/background-1.jpeg");
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .profile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-20%, -70%);
     width: 60%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
@@ -102,31 +101,24 @@ body {
 
 .projects {
     position: relative;
-    min-height: 100vh; /* testing */
+    min-height: 100vh; 
     text-align: center;
     background: #F0EDE5;
 }
 .projects>h1 {
     margin: 0;
-    padding: 15px;
+    padding: 25px;
     color: #17926d;
 }
 .projects-content {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%); */
     margin: 0 auto;
     width: 85%;
-    min-height: 80vh; /* testing */
-    background: #ccc;
-    border: 0 solid gray;
-    border-radius: 20px;
+    min-height: 80vh; 
     display: flex;
-    flex-flow: row wrap; /* testing */
+    flex-flow: row wrap; 
     justify-content: space-evenly;
     align-content: center;
-    align-items: center;    
+    align-items: flex-start;    
 }
 
 .project-item {
@@ -135,6 +127,11 @@ body {
     border: 1px solid #777;
     border-radius: 0 0 10px 10px;
     background: white;
+    transition: .3s;
+}
+.project-item:hover {
+    box-shadow: 0 10px 30px 5px #ccc;
+    transform: scale(1.05, 1.05);
 }
 @media only screen and (max-width: 700px) {
     .project-item {
@@ -194,10 +191,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
+    min-width: 60%;
+    min-height: 50%;
     background: rgba(0, 0, 0, 0.9);
-    border: 0 solid gray;
     border-radius: 15px;
     text-align: center;
 }
