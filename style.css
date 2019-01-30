@@ -1,8 +1,8 @@
 :root {
     --navbar-height: 60px;
-    --main-color: #222729;
-    --secondary-color: #47d7ac;
-    --font-color: white;
+    --main-color: #292b2f;
+    --secondary-color: #3bbfc3;
+    --font-color: #d7d5d9;
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@ body {
 }
 .navbar__links {
     float: right;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -49,7 +49,7 @@ body {
     }
     .navbar__link {
         display: block;
-        background: #323a3d;
+        background: #36383d;
         text-align: center;
     }
     .navbar__icon {
@@ -69,33 +69,44 @@ body {
         display: block;
         position: absolute;
         top: var(--navbar-height);
-        right: 0;
-        width: 50%;
+        width: 100%;
     }
 }
 
 .home {
-    /* position: relative; */
     background-image: url("images/background-1.jpeg");
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .profile {
-    width: 60%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profile__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #586c70;
+    background-image: url("images/avatar.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .profile__name {
     color: var(--secondary-color);
 }
 .profile__descritpion p {
-    font-size: 18px;
+    font-size: 20px;
     color: #ccc;
 }
 
@@ -108,7 +119,7 @@ body {
 .projects>h1 {
     margin: 0;
     padding: 25px;
-    color: #17926d;
+    color: #018185;
 }
 .projects-content {
     margin: 0 auto;
